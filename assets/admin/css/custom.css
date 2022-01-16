@@ -1,0 +1,19 @@
+.slideRightToLeft {
+    background-color: #164656;
+    z-index: 1000;
+    color: white;
+    cursor: pointer;
+    padding: 15px 10px;
+    margin-right: -450px;
+    width: 450px;
+    float: right;
+    position: fixed!important;
+    margin-top: 50px;
+    right: 0;
+    transition: all 1s;
+}
+
+.slideRightToLeft.show {
+    display: block;
+    margin-right: 0;
+}
