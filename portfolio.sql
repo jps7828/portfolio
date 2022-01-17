@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 30, 2021 at 05:09 PM
+-- Generation Time: Jan 17, 2022 at 12:58 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `chamoli`
+-- Database: `portfolio`
 --
 
 -- --------------------------------------------------------
@@ -46,8 +46,12 @@ CREATE TABLE `about_us` (
 --
 
 INSERT INTO `about_us` (`about_us_id`, `about_us_heading`, `about_us_title`, `about_us_image_1`, `about_us_image_2`, `about_us_image_3`, `about_us_caption_1`, `about_us_caption_2`, `about_us_caption_3`, `about_us_details`, `about_us_status`) VALUES
-(2, '                 Sponsored By Ministry Of MSME Under SFURTI Scheme               ', 'Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand', 'assets/web/images/about_us/200671image_1.png', 'assets/web/images/about_us/642776image_2.png', 'assets/web/images/about_us/304223image_3.jpg', '', '', '', '<p><strong>We The Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand</strong> is supported by the Scheme of Fund for Regeneration of Traditional Industries (SFURTI) of the Ministry of MSME, Government of India, we are working to transform traditional farming from an occupation to a respectful profession and enable artisans to earn consistently high returns by reducing risk factors. We are working towards providing hand-holding support to artisans by solving the agricultural upgradation activities for traditional Medicinal and Aromatic Plants plants in the region. We have been functioning to carry out economic development for local artisans within the cluster. The vision of the organization is <strong>&ldquo;to empower the deprived and vulnerable sections of the community, by enhancing their knowledge and awareness, thus providing them with sustainable avenues for growth and development&rdquo;</strong>.</p>\r\n\r\n<p><strong>Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand Origin of Cluster:</strong></p>\r\n\r\n<p>Chamoli proved itself &ldquo;the most spectacular in its natural assets; be it scenery, valley aspects, water-edges, floristic varieties, dramatic landform or the climatic cardinalities&rdquo;. Lack of livelihood opportunities, modern amenities and services for decent living in rural areas lead to the migration of people to urban areas. There are wide gaps in the availability of physical and social infrastructure between rural and urban areas. To address these issues, there is envisaged as a self-sustainable and viable model of service delivery to be managed through an implementation framework between local people, public authorities and the private sector. The Government support would be in the form of finding the right type of management structure to develop and maintain rural infrastructure, empowering such management structure and providing initial economic support. Farming plays a vital part in the mountainous region of Uttarakhand state. Farmers of this hilly state are very hard working; they toil through the day, starting with the house works, nurturing children and livestock, going out for fodder, fuel, drinking water and NTFP collection for sustaining livelihoods. In the midst of all these worries, a hill farmer remains firmly devoted to his/her work, keeps him/her composure and is honest. Enhancing social security for these farmers and setting up the processing industry and management of natural resources, medicinal plants cultivation etc. can enhance employment opportunities both for men and women in this region, which will result in less migration. The remote area of this state has inadequate networking of transport and other basic supporting facilities, which come in the way for proper benefits of agriculture, horticulture and other developmental programmes conducted by state and other organizations About 70% population of the targeted region is engaged in agriculture. More than 96 per cent of the total female workers and about 78% of the total male workers are engaged in agricultural pursuits. There are some other major sources of livelihood such as Electronic Goods, Bakery, Wool Industries, Oil Extraction, Spice Industries, Tyre Retreating, Dairy, Wooden Furniture, Agriculture Equipments, Mini Flour Mills, Namkeen, Optical Assembling, Photo Framing, Beauty Parlour, Sweets Boxes, Motor Cycle / Scooter Repairing, Digital Photo Video Coverage, Computer Training, Steel Fabrication are among some other key economic activities of the region. Besides this, the agriculture sectors remain the main economic activity of the region however is poorly developed primarily due to the inaccessibility and vulnerability of this mountain region.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Objectives:</strong></p>\r\n\r\n<p>1. Upgradation of tools.</p>\r\n\r\n<p>2. Implementation of better and improved labour management techniques.</p>\r\n\r\n<p>3. Using various activities for capacity building for training.</p>\r\n\r\n<p>4. Installation of processing and value addition facility in the cluster.</p>\r\n\r\n<p>5. Provision of markets other than traditional local markets, by the formation of Farmer&rsquo;s Producers Organisation (FPOs) by increasing quality control enabling the possibility of export.</p>\r\n\r\n<p>6. To involve more farmers from the area to become a part of this cluster, for raising a general economic level of the cluster as well to boost the local economy.</p>\r\n\r\n<p>7. Brand establishment by highlighting the organic nature of agriculture in the targeted area giving the product produced in the cluster a unique value-added perspective.</p>\r\n\r\n<p>8. Establish a market chain leading to increased income of the cultivators in secondary sectors as well.</p>\r\n', 'Active'),
-(3, '                          Sponsored By Ministry Of MSME Under SFURTI Scheme                   ', 'Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand', 'assets/web/images/about_us/121696image_1.png', 'assets/web/images/about_us/964578image_2.png', 'assets/web/images/about_us/925056image_3.jpg', '', '<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', '<p><strong>&quot; Zandu Foundation for Health Care (ZFHC)&rdquo;</strong> is working in the Chamoli, Uttarakhand for promotion of commercial cultivation of medicinal and aromatic plants with association with several Govt. Departments/Institutions. Besides this, the foundation is engaged in providing the training program to the farmers of the targeted regions for the last 6-7 years. When district Chamoli is examined closely, agriculture emerges as the main activity. Since most of the land is under forest cover, there is very little scope for diversification. However, due to the constant effects of Govt. of Uttarakhand, the farmers of the regions have started diversification of alternative farm-based activities like horticultural crops, medicinal and aromatic plants and some have also tried to extract the potential of animal husbandry activities like dairy and poultry. To increase the farmer&rsquo;s income through diversification of agriculture, promotion of medicinal and aromatic plants.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Our Focus:</strong></p>\r\n\r\n<p>1. To provide better employment opportunities and to increase the marketability of products.</p>\r\n\r\n<p>2. To develop a cluster with equal participation of local women artisans.</p>\r\n\r\n<p>3. To apply modern custom-based farming techniques.</p>\r\n\r\n<p>4. To organize the artisans and traditional industries into clusters for better competitiveness.</p>\r\n\r\n<p>5. Skill training and economical uplifting with modern tools and technologies.</p>\r\n\r\n<p>6. To increase the beneficiary income in the cluster as well for promoting micro and small social enterprises in the region.</p>\r\n\r\n<p>7. To provide better management and processing/value addition.</p>\r\n\r\n<p>8. To enhance the technical skill of artisans as well as technician, extension workers, entrepreneurs and other operating in the sector.</p>\r\n\r\n<p>9. Creating tangible common/community-based assets to support the developmental requirements in the cluster.</p>\r\n\r\n<p>10. To introduce the latest marketing techniques and brand building.</p>\r\n', 'Active');
+(2, '', 'Web Development', 'assets/web/images/about/logo.png', '', '', '																																						', '', '', '<p>Developing websites on various popular platforms like PHP (Codeigniter).</p>\r\n', 'Active'),
+(3, '', 'Web Designing', '', '', '', '<i data-feather=\"book-open\"></i>', '', '', '<p>Web Designing</p>\r\n', 'Active'),
+(4, '', 'Static 2 Dynamic', '', '', '', '<i data-feather=\"tv\"></i>', '', '', '<p>Converting static websites into the dynamic one, for easy content updates</p>\r\n', 'Active'),
+(5, '', 'Mobile Optimised', '', '', '', '<i data-feather=\"twitch\"></i>', '', '', '<p>Well optimised mobile ready websites, relieving from the need of mobile apps.</p>\r\n', 'Active'),
+(6, '', 'Lightening Websites', 'assets/web/images/about_us/200671image_1.png', '', '', '<i data-feather=\"wifi\"></i>', '', '', '<p>Always on edge websites ready to show in seconds even on slower internet.</p>\r\n', 'Active'),
+(7, '', 'Personal Portfolio', 'assets/web/images/about_us/121696image_1.png', '', '', '<i data-feather=\"slack\"></i>', '', '', '<p>Developing and designing personal portfolio website for professional touch.</p>\r\n', 'Active');
 
 -- --------------------------------------------------------
 
@@ -106,6 +110,38 @@ INSERT INTO `blog` (`blog_id`, `blog_title`, `blog_image_1`, `blog_description`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `clients`
+--
+
+CREATE TABLE `clients` (
+  `clients_id` int(11) NOT NULL,
+  `clients_name` varchar(20) NOT NULL,
+  `clients_image_1` varchar(255) NOT NULL,
+  `clients_caption` text NOT NULL,
+  `clients_status` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `clients`
+--
+
+INSERT INTO `clients` (`clients_id`, `clients_name`, `clients_image_1`, `clients_caption`, `clients_status`) VALUES
+(41, 'Nisarg', 'assets/web/images/clients/nisarg.png', '', 'Active'),
+(42, 'Hillstar Nagaland', 'assets/web/images/clients/hillstarnagaland.png', '', 'Active'),
+(43, 'JSM', 'assets/web/images/clients/jsm.png', '', 'Active'),
+(44, 'Crisil', 'assets/web/images/clients/crisil.png', '', 'Active'),
+(45, 'Fusion Craft', 'assets/web/images/clients/fusioncraft.png', '', 'Active'),
+(46, 'PPV Kohima', 'assets/web/images/clients/ppvkohima.png', '', 'Active'),
+(47, 'Mpisfurti', 'assets/web/images/clients/mpisfurti.png', '', 'Active'),
+(48, 'Cane Processing', 'assets/web/images/clients/caneprocessing.png', '', 'Active'),
+(49, 'Kauna', 'assets/web/images/clients/kpcimp.png', '', 'Active'),
+(50, 'Woodbased', 'assets/web/images/clients/woodbasedfurniture.png', '', 'Active'),
+(51, 'Pulse', 'assets/web/images/clients/pulse.png', '', 'Active'),
+(52, 'Honey Manipur', 'assets/web/images/clients/honeyprocessingmanipur.png', '', 'Active');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `com_basic_details`
 --
 
@@ -137,7 +173,7 @@ CREATE TABLE `com_basic_details` (
 --
 
 INSERT INTO `com_basic_details` (`com_basic_details_id`, `com_basic_site_name`, `com_basic_logo`, `com_basic_logo_other`, `com_basic_favicon`, `com_basic_meta_title`, `com_basic_meta_key`, `com_basic_meta_description`, `com_basic_email`, `com_basic_email_alt`, `com_basic_contact`, `com_basic_contact_alt`, `com_basic_address`, `com_basic_address_alt`, `com_basic_location`, `com_basic_map`, `com_basic_about_us`, `com_basic_rating`, `com_basic_aim`, `com_basic_video`) VALUES
-(1, 'Chamoli', 'assets/web/images/logo/164210image_1.png', 'assets/web/images/logo/gem.svg', 'assets/web/images/logo/633655image_3.png', 'Value Addition of Medicinal and Aromatic Plants Cluster', '', '', 'vksbisht@gmail.com', '', '7500475044', '7983306660', '<p>Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand</p>\r\n', '', '', '<p><iframe height=\"600\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57957.67186113506!2d84.94706125282386!3d24.783312176996304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a440a1b3c1f%3A0xcef6b223bdbf34a6!2sGaya%2C%20Bihar!5e0!3m2!1sen!2sin!4v1619152041223!5m2!1sen!2sin\" style=\"border:0;\" width=\"800\"></iframe></p>\r\n', 'We The Value Addition of Medicinal and Aromatic Plants Cluster Chamoli, Uttarakhand is supported by the Scheme of Fund for Regeneration of Traditional Industries (SFURTI) of the Ministry of MSME, Government of India', '', 'We are a society working under the Ministry Of MSME -SFURTI Scheme -Centre for Rural Development. To carry out economic development program through KVI (Khadi and Village Industries), to provide shelter to the poor and needy, to  mobilize the rural poor towards a welfare society. To create rural masses motivated, self-aware and self-reliant towards rural development and reconstruction prospects of all faculties by organizing awareness and training camps on various aspects  at suitable rural places/centers and also by providing direct and helpful detailed information and adequate knowledge, guidelines/help about rural reconstruction programs with a special view to  accelerating communal, national and international integrity with peaceful harmony.', '');
+(1, 'JPS', 'assets/web/images/logo/logo.png', 'assets/web/images/logo/logo_other.png', 'assets/web/images/logo/favicon.png', 'JPS Portfolio Website Jitendra Pratap Singh', '', '<p>JPS Portfolio Website Jitendra Pratap Singh custom online resume cv document github</p>\r\n', 'jps7828@gmail.com', 'jit78285@gmail.com', '7828550802', '9575757055', '<p>Rajokari, South Delhi, Delhi, Bharat</p>\r\n', '<p>Harakhpur, Mandhata, Pratapgarh, Uttar Pradesh, Bharat</p>\r\n', '<p>Rajokari, South Delhi, Delhi, Bharat</p>\r\n', '<p><iframe height=\"600\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14023.990580455998!2d77.09744267603372!3d28.509718575187115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1938456789c7%3A0x45a757aa37e73026!2sAMBIENCE%20MALL%2C%20GURUGRAM!5e0!3m2!1sen!2sin!4v1640507543953!5m2!1sen!2sin\" style=\"border:0;\" width=\"800\"></iframe></p>\r\n', '<p>A Web Developer aspiring to become a core member of strategy building team, where I can utilize my knowledge, skills and attitude towards the growth of organization.</p>\r\n', '', 'A Web Developer aspiring to become a core member of strategy building team, where I can utilize my knowledge, skills and attitude towards the growth of organization.', '');
 
 -- --------------------------------------------------------
 
@@ -163,42 +199,15 @@ CREATE TABLE `com_route` (
 --
 
 INSERT INTO `com_route` (`com_route_id`, `com_route_type`, `com_route_old_link`, `com_route_new_link`, `com_route_external_link`, `com_route_category`, `com_route_meta_title`, `com_route_meta_key`, `com_route_meta_tag`, `com_route_meta_description`) VALUES
-(9, 'Internal', 'Web/AboutUs/who_we_are', 'about-us', '', 'Menu', 'About Us', 'About Us', 'About Us', 'About Us'),
-(10, 'Internal', 'Web/ContactUs', 'contact-us', '', 'Menu', 'Contact Us', 'Contact Us', 'Contact Us', 'Contact Us'),
-(11, 'Internal', 'Web/OurTeam', 'our-team', '', 'Menu', 'Our Team', 'Our Team', 'Our Team', 'Our Team'),
-(20, 'Internal', 'Web/Skills', 'skill-and-training', '', '', '', '', '', ''),
-(21, 'Internal', 'Web/E_portal', 'e-portal', '', '', '', '', '', ''),
-(34, 'Internal', 'Web/AboutUs/what_we_do', 'what-we-do', '', 'Menu', 'Contact Us', 'Contact Us', 'Contact Us', 'Contact Us'),
-(46, 'Internal', 'Web/Resources/brochure', 'brochure', '', '', '', '', '', ''),
-(48, 'Internal', 'Web/Products', 'products', '', 'Products', '', '', '', ''),
-(57, 'Internal', 'Web/Gallery', 'gallery', '', '', '', '', '', ''),
-(58, 'Internal', 'Web/AboutUs/who_we_are', 'who-we-are', '', 'Menu', 'Contact Us', 'Contact Us', 'Contact Us', 'Contact Us'),
-(61, 'Internal', 'Web/Blogs/blog/4', 'latest-techniques-of-production-management', '', 'Blogs', 'Latest Techniques of', 'Latest Techniques of production management', 'Latest Techniques of production management', 'Latest Techniques of production management'),
-(62, 'Internal', 'Web/Blogs/blog/5', 'best-tools-for-production-management', '', 'Blogs', 'Best tools for produ', 'Best tools for production management', 'Best tools for production management', 'Best tools for production management'),
-(63, 'Internal', 'Web/Blogs/blog/6', 'marketing-practices', '', 'Blogs', 'marketing practices', 'marketing practices', 'marketing practices', 'marketing practices'),
-(64, 'Internal', 'Web/Blogs', 'blogs', '', '', '', '', '', ''),
-(170, 'Internal', 'Web/Resources/catalogue', 'catalogue', '', '', '', '', '', ''),
-(171, 'Internal', 'Web/Products/product/116', 'moringa-dried-leaves', '', 'Products', 'Moringa Dried Leaves', 'Moringa Dried Leaves', 'Moringa Dried Leaves', 'Moringa Dried Leaves'),
-(172, 'Internal', 'Web/Products/product/117', 'moringa-based-paper-pulp', '', 'Products', 'Moringa Based Paper ', 'Moringa Based Paper Pulp', 'Moringa Based Paper Pulp', 'Moringa Based Paper Pulp'),
-(173, 'Internal', 'Web/Products/product/118', 'moringa-dried-powder', '', 'Products', 'Moringa Dried Powder', 'Moringa Dried Powder', 'Moringa Dried Powder', 'Moringa Dried Powder'),
-(174, 'Internal', 'Web/Products/product/119', 'cattle-feed', '', 'Products', 'Cattle Feed', 'Cattle Feed', 'Cattle Feed', 'Cattle Feed'),
-(175, 'Internal', 'Web/Resources/company_profile', 'profile', '', '', '', '', '', ''),
-(176, 'Internal', 'Web/Products/product/120', 'fresh-turmeric', '', 'Products', 'Fresh Turmeric', 'Fresh Turmeric', 'Fresh Turmeric', 'Fresh Turmeric'),
-(177, 'Internal', 'Web/Products/product/121', 'fresh-herbs', '', 'Products', 'Fresh Herbs', 'Fresh Herbs', 'Fresh Herbs', 'Fresh Herbs'),
-(178, 'Internal', 'Web/Products/product/122', 'curcumin-95-pure', '', 'Products', 'Curcumin 95% Pure', 'Curcumin 95% Pure', 'Curcumin 95% Pure', 'Curcumin 95% Pure'),
-(179, 'Internal', 'Web/Products/product/123', 'turmeric-oil', '', 'Products', 'Turmeric Oil', 'Turmeric Oil', 'Turmeric Oil', 'Turmeric Oil'),
-(180, 'Internal', 'Web/Products/product/124', 'curcumin-capsule', '', 'Products', 'Curcumin Capsule', 'Curcumin Capsule', 'Curcumin Capsule', 'Curcumin Capsule'),
-(181, 'Internal', 'Web/Products/product/125', 'mushroom', '', 'Products', 'mushroom', 'mushroom', 'mushroom', 'mushroom'),
-(182, 'Internal', 'Web/Products/product/129', 'n-a', '', 'Products', '', '', '', ''),
-(183, 'Internal', 'Web/Products/product/130', 'rosemary', '', 'Products', 'Rosemary', 'Rosemary', 'Rosemary', 'Rosemary'),
-(184, 'Internal', 'Web/Products/product/131', 'tejpatta', '', 'Products', 'Tejpatta', 'Tejpatta', 'Tejpatta', 'Tejpatta'),
-(185, 'Internal', 'Web/Products/product/132', 'tulsi', '', 'Products', 'Tulsi', 'Tulsi', 'Tulsi', 'Tulsi'),
-(186, 'Internal', 'Web/Products/product/133', 'tulsi-oil', '', 'Products', 'Tulsi Oil', 'Tulsi Oil', 'Tulsi Oil', 'Tulsi Oil'),
-(187, 'Internal', 'Web/Products/product/134', 'dry-herbs', '', 'Products', 'Dry Herbs', 'Dry Herbs', 'Dry Herbs', 'Dry Herbs'),
-(188, 'Internal', 'Web/Products/product/135', 'kutki', '', 'Products', 'Kutki', 'Kutki', 'Kutki', 'Kutki'),
-(189, 'Internal', 'Web/Products/product/136', 'raw-ginger', '', 'Products', 'Raw Ginger', 'Raw Ginger', 'Raw Ginger', 'Raw Ginger'),
-(190, 'Internal', 'Web/Products/product/137', 'kapoor-kachri', '', 'Products', 'Kapoor Kachri', 'Kapoor Kachri', 'Kapoor Kachri', 'Kapoor Kachri'),
-(191, 'Internal', 'Web/Products/product/138', 'oregano', '', 'Products', 'Oregano', 'Oregano', 'Oregano', 'Oregano');
+(200, 'Internal', 'portfolios/portfolio1', 'fusion-craft', '', 'portfolios', 'fusion craft', 'fusion craft', 'fusion craft', 'fusion craft'),
+(201, 'Internal', 'portfolios/portfolio2', 'ssow-bhopal', '', 'portfolios', 'ssow bhopal', 'ssow bhopal', 'ssow bhopal', 'ssow bhopal'),
+(202, 'Internal', 'portfolios/portfolio3', 'jsm-satna', '', 'portfolios', 'jsm satna', 'jsm satna', 'jsm satna', 'jsm satna'),
+(203, 'Internal', 'portfolios/portfolio4', 'crisil', '', 'portfolios', 'crisil', 'crisil', 'crisil', 'crisil'),
+(204, 'Internal', 'portfolios/portfolio5', 'gullakk', '', 'portfolios', 'gullakk', 'gullakk', 'gullakk', 'gullakk'),
+(205, 'Internal', 'portfolios/portfolio6', 'namsai', '', 'portfolios', 'namsai', 'namsai', 'namsai', 'namsai'),
+(206, 'Internal', 'Web/ContactUs/insert', 'save', '', '', '', '', '', ''),
+(207, 'Internal', 'Web/Form', 'form', '', '', '', '', '', ''),
+(208, 'Internal', 'Home/contact', 'contact', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -263,7 +272,7 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`feedback_id`, `feedback_title`, `feedback_subject`, `feedback_name`, `feedback_email`, `feedback_phone`, `feedback`) VALUES
-(62, '', '', 'test', 'test@mail.com', '', 'this ');
+(140, '', 'resume updated', 'Jitendra Pratap Singh', 'jps7828@gmail.com', '7828550802', 'kkkkkkkkk');
 
 -- --------------------------------------------------------
 
@@ -320,22 +329,14 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`menu_id`, `menu_name`, `menu_type`, `sub_menu_of`, `menu_main_menu_id`, `menu_show_in`, `menu_ordering`, `menu_link`, `link`, `menu_status`, `com_route_id`) VALUES
-(1, 'Home', 'main_menu', '', 0, 'Top', 1, '/', '', 'Active', 0),
-(4, 'Product & Services', 'main_menu', '', 0, 'Top', 4, 'products', '', 'Active', 0),
-(5, 'Skill & Training', 'main_menu', '', 0, 'Top', 5, 'skill-and-training', '', 'Active', 0),
-(6, 'E - Portal', 'main_menu', '', 0, 'Top', 6, 'e-portal', '', 'Active', 0),
-(16, 'About Us', 'main_menu', '', 0, 'Top', 2, 'about-us', '', 'Active', 9),
-(17, 'Contact Us', 'main_menu', '', 0, 'Top', 7, 'contact-us', '', 'Active', 10),
-(18, 'Our Team', 'main_menu', '', 0, 'Top', 3, 'our-team', '', 'Deactive', 11),
-(27, 'Resources', 'main_menu', '', 0, '', 8, 'resources', '', 'Active', 0),
-(30, 'Brochure', 'sub_menu', '', 27, '', 0, 'brochure', '', 'Active', 0),
-(31, 'Gallery', 'sub_menu', 'Resources', 27, '', 0, 'gallery', '', 'Active', 0),
-(32, 'Who We Are', 'sub_menu', 'About Us', 16, '', 1, 'who-we-are', '', 'Active', 0),
-(33, 'What We Do', 'sub_menu', 'About Us', 16, '', 2, 'what-we-do', '', 'Active', 0),
-(34, 'Our Team', 'sub_menu', 'About Us', 16, '', 3, 'our-team', '', 'Active', 0),
-(35, 'Blogs', 'sub_menu', 'Resources', 27, '', 3, 'blogs', '', 'Deactive', 0),
-(36, 'Catalogues', 'sub_menu', 'Downloads', 27, '', 3, 'catalogue', '', 'Active', 0),
-(37, 'Company Profile', 'sub_menu', 'Resources', 27, '', 0, 'profile', '', 'Active', 0);
+(38, 'home', 'main_menu', '', 0, '', 1, '#home', '', 'Active', 0),
+(39, 'about', 'main_menu', '', 0, '', 2, '#about', '', 'Active', 0),
+(40, 'portfolio', 'main_menu', '', 0, '', 3, '#portfolio', '', 'Active', 0),
+(41, 'resume', 'main_menu', '', 0, '', 4, '#resume', '', 'Active', 0),
+(42, 'clients', 'main_menu', '', 0, '', 5, '#clients', '', 'Active', 0),
+(43, 'pricing', 'main_menu', '', 0, '', 6, '#pricing', '', 'Active', 0),
+(44, 'blog', 'main_menu', '', 0, '', 7, '#blog', '', 'Active', 0),
+(45, 'contacts', 'main_menu', '', 0, '', 8, '#contacts', '', 'Active', 0);
 
 -- --------------------------------------------------------
 
@@ -357,6 +358,40 @@ CREATE TABLE `page` (
   `page_link` varchar(50) NOT NULL,
   `link` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `portfolio`
+--
+
+CREATE TABLE `portfolio` (
+  `portfolio_id` int(11) NOT NULL,
+  `portfolio_name` varchar(50) NOT NULL,
+  `portfolio_category` varchar(100) NOT NULL,
+  `com_route_id` int(11) NOT NULL,
+  `portfolio_heading` text NOT NULL,
+  `portfolio_image_1` varchar(50) NOT NULL,
+  `portfolio_image_2` varchar(50) NOT NULL,
+  `portfolio_image_3` varchar(50) NOT NULL,
+  `portfolio_details` text NOT NULL,
+  `portfolio_ordering` int(11) NOT NULL,
+  `portfolio_status` varchar(10) NOT NULL,
+  `portfolio_link` varchar(50) NOT NULL,
+  `portfolio_category_link` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `portfolio`
+--
+
+INSERT INTO `portfolio` (`portfolio_id`, `portfolio_name`, `portfolio_category`, `com_route_id`, `portfolio_heading`, `portfolio_image_1`, `portfolio_image_2`, `portfolio_image_3`, `portfolio_details`, `portfolio_ordering`, `portfolio_status`, `portfolio_link`, `portfolio_category_link`) VALUES
+(1, 'fusion craft', '', 200, 'Dresses & Art', 'assets/web/images/portfolio/749055image_1.png', '', '', '', 0, 'Active', 'https://fusioncraft.in', ''),
+(2, 'ssow bhopal', '', 201, 'Stitching & Design', 'assets/web/images/portfolio/914089image_1.png', '', '', '', 0, 'Active', 'https://ssowbpl.in/', ''),
+(3, 'jsm satna', '', 202, 'Wood Works', 'assets/web/images/portfolio/246482image_1.png', '', '', '', 0, 'Active', 'https://www.jsmsatna.com/', ''),
+(4, 'crisil', '', 203, 'Website Development', 'assets/web/images/portfolio/488865image_1.png', '', '', '', 0, 'Active', 'https://www.crisilinfotech.com', ''),
+(5, 'gullakk', '', 204, 'Shopping Website', 'assets/web/images/portfolio/888512image_1.png', '', '', '', 0, 'Active', 'https://www.gullakk.com/', ''),
+(6, 'namsai', '', 205, 'Aloevera Products', 'assets/web/images/portfolio/595007image_1.png', '', '', '', 0, 'Active', 'https://namsaiorg.in', '');
 
 -- --------------------------------------------------------
 
@@ -514,10 +549,14 @@ CREATE TABLE `skills` (
 --
 
 INSERT INTO `skills` (`skill_id`, `skill_name`, `skill_video`, `com_route_id`, `skill_heading`, `skill_image_1`, `skill_image_2`, `skill_image_3`, `skill_details`, `skill_ordering`, `skill_status`, `skill_link`) VALUES
-(1, 'Inventory Management', '<p><iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/_DiqEGcWY0Y\" width=\"560\"></iframe></p>\r\n', 30, 'Day 1 of Inventory Management', 'assets/web/images/809125image_1.jpg', '', '', '', 0, 'Active', ''),
-(2, 'Inventory Management', '<p><iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/_DiqEGcWY0Y\" width=\"560\"></iframe></p>\r\n', 31, 'Day 2 of Inventory Management', 'assets/web/images/561112image_1.png', '', '', '', 0, 'Active', ''),
-(3, 'Digital Marketing', '<p><iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/S9xyJAcyaQQ\" width=\"560\"></iframe></p>\r\n', 32, 'Day 1 Digital Marketing', 'assets/web/images/300010image_1.png', '', '', '', 0, 'Active', ''),
-(4, 'Digital Marketing', '<iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/lgB99yM-IKA\" width=\"560\"></iframe>', 30, 'Day 2 Digital Marketing', 'assets/web/images/843728image_1.jpg', '', '', '', 0, 'Active', '');
+(5, 'PHP', '', 192, '', 'assets/web/images/skills/762435image_1.svg', '', '', '', 1, 'Active', ''),
+(6, 'Codeigniter', '', 193, '', 'assets/web/images/skills/671576image_1.png', '', '', '', 2, 'Active', ''),
+(7, 'javascript', '', 194, '', 'assets/web/images/skills/955965image_1.svg', '', '', '', 3, 'Active', ''),
+(8, 'mysql', '', 195, '', 'assets/web/images/skills/768482image_1.svg', '', '', '', 4, 'Active', ''),
+(9, 'bootstrap', '', 196, '', 'assets/web/images/skills/929825image_1.svg', '', '', '', 5, 'Active', ''),
+(10, 'HTML', '', 197, '', 'assets/web/images/skills/396731image_1.svg', '', '', '', 6, 'Active', ''),
+(11, 'css', '', 198, '', 'assets/web/images/skills/151040image_1.svg', '', '', '', 7, 'Active', ''),
+(12, 'github', '', 199, '', 'assets/web/images/skills/119677image_1.svg', '', '', '', 8, 'Active', '');
 
 -- --------------------------------------------------------
 
@@ -543,16 +582,11 @@ CREATE TABLE `slider` (
 
 INSERT INTO `slider` (`slider_id`, `slider_name`, `slide_name`, `slider_heading`, `slider_sub_heading`, `slider_image_1`, `slider_caption`, `slider_status`, `slider_video`) VALUES
 (3, 'Home', 'slide_1', 'Value Addition of Medicinal and Aromatic Plants Cluster', 'Sponsored By Ministry Of MSME Under SFURTI Scheme', 'assets/web/images/slider/118154image_1.png', '', 'Active', ''),
-(6, 'Testimonial', 'slide_1', 'Hemant', '', 'assets/web/images/slider/t3.png', 'Good quality Herbs. Value for money', 'Active', ''),
-(7, 'Testimonial', 'slide_2', 'Anmol Sharma', '', 'assets/web/images/slider/t2.png', 'The product reached in time, was properly packed, and is the same as mentioned.', 'Active', ''),
-(8, 'Testimonial', 'slide_3', 'Puneet', '', 'assets/web/images/slider/t3.png', 'Superb products, meets my expectation - quality, packing, cleanliness all up to the mark.', 'Active', ''),
-(13, 'Associates', 'slide_1', 'Amazon', '', 'assets/web/images/slider/amazon.svg', '', 'Active', ''),
-(14, 'Associates', 'slide_2', 'GEM', '', 'assets/web/images/slider/gem.svg', '', 'Active', ''),
-(29, 'Associates', 'slide_3', 'Nisarg', '', 'assets/web/images/slider/697066image_1.png', '', 'Active', ''),
-(37, 'Home', 'slide_2', 'Value Addition of Medicinal and Aromatic Plants Cluster ', 'Sponsored By Ministry Of MSME Under SFURTI Scheme', 'assets/web/images/slider/875204image_1.png', '', 'Active', ''),
-(38, 'Associates', 'slide_4', '', '', 'assets/web/images/slider/117128image_1.svg', '', 'Active', ''),
-(39, 'Testimonial', 'slide_4', '', '', 'assets/web/images/slider/120720image_1.png', 'Genuine product with good quality, the aroma lasts longer than expected.', 'Active', ''),
-(40, 'Testimonial', 'slide_5', '', '', 'assets/web/images/slider/506931image_1.png', 'One stop for good quality aromatic herbs.', 'Active', '');
+(6, 'Testimonial', 'Ravi Prakash', 'Crisil Infotech', 'Web App Development', 'assets/web/images/slider/483500image_1.png', '<p>I would highly recommend him for all the development purposes, fastest achiever and work completion. Services are well documented and logical to our needs. We are very excited to be working with him, Over just a short period of time I can tell that we are going to be doing business with him again and again.</p>\r\n', 'Active', ''),
+(7, 'Testimonial', 'Hemant Chanchlani', 'Director - Vaiotech', 'Website Development', 'assets/web/images/slider/574260image_1.png', '<p>Prompt customer support and services, highly motivated towards completion of work. Regular updates.</p>\r\n', 'Active', ''),
+(8, 'Testimonial', 'Sanjay Adtani', 'sanjayadtani.com', 'Web & App Development', 'assets/web/images/slider/310696image_1.png', '<p>Put the work and get it done always before time to be sure the work will be completed in time limit. On Time Delivery always.</p>\r\n', 'Active', ''),
+(39, 'Testimonial', 'Shradha Singh', 'senior PHP developer', 'Development', 'assets/web/images/slider/496971image_1.png', '<p>Little instructions and the work is done. Easy to understand the projects along with the status of development.</p>\r\n', 'Active', ''),
+(40, 'Testimonial', 'Ruchika Shah', 'Nisarg Agripreneurship', 'Website Development', 'assets/web/images/slider/722065image_1.png', '<p>Great company to work with. It&rsquo;s almost as if they are an employee working along with you, They handle my PHP development work, web design, web hosting.</p>\r\n', 'Active', '');
 
 -- --------------------------------------------------------
 
@@ -573,10 +607,14 @@ CREATE TABLE `social_network` (
 --
 
 INSERT INTO `social_network` (`social_network_id`, `social_network_name`, `social_network_icon`, `social_network_link`, `social_network_status`) VALUES
-(1, 'facebook', 'fa fa-facebook', '#', 'Active'),
-(3, 'youtube', 'fa fa-youtube', '#', 'Active'),
-(4, 'linkedin', 'fa fa-linkedin', '#', 'Active'),
-(5, 'twitter ', 'fa fa-twitter', '#', 'Active');
+(1, 'github', 'github', 'https://github.com/jps7828', 'Active'),
+(3, 'facebook', 'facebook', 'http://www.facebook.com/JPS7828', 'Active'),
+(4, 'linkedin', 'linkedin', 'http://www.linkedin.com/in/jps7828/', 'Active'),
+(5, 'twitter ', 'twitter', 'http://twitter.com/jps7828', 'Active'),
+(6, 'email', 'mail', 'mailto:jps7828@gmail.com', 'Active'),
+(7, 'website', 'monitor', 'https://jps7828.herokuapp.com/', 'Active'),
+(8, 'mobile', 'phone-call', 'callto:7828550802', 'Active'),
+(9, 'whatsapp', 'message-circle', 'https://api.whatsapp.com/send?phone=917828550802&t', 'Active');
 
 -- --------------------------------------------------------
 
@@ -613,16 +651,6 @@ CREATE TABLE `team` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `team`
---
-
-INSERT INTO `team` (`team_id`, `team_type`, `team_name`, `team_designation`, `team_image_1`, `team_details`, `team_status`) VALUES
-(1, '', 'Nodal Agency', '', 'assets/web/images/team/415722image_1.png', 'Process and Product Development Center, (PPDC), Agra', 'Active'),
-(2, '', 'Implementing Agency', '', 'assets/web/images/team/807038image_1.png', 'Zandu Foundation, Chamoli, Uttarakhand', 'Active'),
-(3, '', 'Technical Agency', '', 'assets/web/images/team/737057image_1.png', 'AVVS, Lucknow, Uttar Pradesh', 'Active'),
-(4, '', 'CDE', '', 'assets/web/images/team/149768image_1.png', '', 'Deactive');
-
---
 -- Indexes for dumped tables
 --
 
@@ -643,6 +671,12 @@ ALTER TABLE `background`
 --
 ALTER TABLE `blog`
   ADD PRIMARY KEY (`blog_id`);
+
+--
+-- Indexes for table `clients`
+--
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`clients_id`);
 
 --
 -- Indexes for table `com_basic_details`
@@ -691,6 +725,12 @@ ALTER TABLE `menu`
 --
 ALTER TABLE `page`
   ADD PRIMARY KEY (`page_id`);
+
+--
+-- Indexes for table `portfolio`
+--
+ALTER TABLE `portfolio`
+  ADD PRIMARY KEY (`portfolio_id`);
 
 --
 -- Indexes for table `products`
@@ -761,7 +801,7 @@ ALTER TABLE `team`
 -- AUTO_INCREMENT for table `about_us`
 --
 ALTER TABLE `about_us`
-  MODIFY `about_us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `about_us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `background`
@@ -776,6 +816,12 @@ ALTER TABLE `blog`
   MODIFY `blog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `clients`
+--
+ALTER TABLE `clients`
+  MODIFY `clients_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+
+--
 -- AUTO_INCREMENT for table `com_basic_details`
 --
 ALTER TABLE `com_basic_details`
@@ -785,7 +831,7 @@ ALTER TABLE `com_basic_details`
 -- AUTO_INCREMENT for table `com_route`
 --
 ALTER TABLE `com_route`
-  MODIFY `com_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `com_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=209;
 
 --
 -- AUTO_INCREMENT for table `contact_us`
@@ -803,7 +849,7 @@ ALTER TABLE `e_portal`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `feedback_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `feedback_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT for table `gallery`
@@ -815,13 +861,19 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `page`
 --
 ALTER TABLE `page`
   MODIFY `page_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `portfolio`
+--
+ALTER TABLE `portfolio`
+  MODIFY `portfolio_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -857,7 +909,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `skills`
 --
 ALTER TABLE `skills`
-  MODIFY `skill_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `skill_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `slider`
@@ -869,7 +921,7 @@ ALTER TABLE `slider`
 -- AUTO_INCREMENT for table `social_network`
 --
 ALTER TABLE `social_network`
-  MODIFY `social_network_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `social_network_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `subscription`
