@@ -152,7 +152,7 @@ function image_validation($file_path, $file_name)
   }
 
       // Check file size 5mb
-  if ($_FILES[$file_name]["size"] > 500000) {
+  if ($_FILES[$file_name]["size"] > 5000000) {
     $errors['size'] = "Sorry, image size limit is 5 MB.";
   }
 

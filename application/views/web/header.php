@@ -62,7 +62,7 @@
             <!-- Start Header Left -->
             <div class="col-lg-2 col-6">
                 <div class="header-left">
-                    <div class="logo">
+                    <div class="logo" id="topLogo">
                         <a href="<?= base_url('/') ?>">
                             <img src="<?= base_url($basic->com_basic_favicon) ?>" alt="logo" style="width:30%;">
                         </a>

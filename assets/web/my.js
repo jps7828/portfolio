@@ -1,3 +1,18 @@
+// Display on scroll
+whatsApp = document.querySelector("#whatsApp");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 300) {
+        whatsApp.style.display = "block";
+    } else {
+        whatsApp.style.display = "none";
+    }
+};
+window.addEventListener("scroll", myScrollFunc);
+// Display on scroll
+
+
 $(document).ready(function() {
 	// Dark - Light mode code
 	initTheme();

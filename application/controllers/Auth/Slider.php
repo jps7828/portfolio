@@ -32,7 +32,12 @@ class Slider extends Admin_Controller {
 	{
 		$image_1 ="";
         if ($_FILES['image_1']['name']!="") {
-            $image_1 = $this->file_upload('slider', 'image_1');
+			$image_1 = image_validation('slider', 'image_1');
+			if(is_array($image_1) === true) 
+			{
+				foreach($image_1 as $error){set_msg($error, 'E');}
+				refer();
+			}
         }
 
 		$array = 
@@ -65,7 +70,12 @@ class Slider extends Admin_Controller {
 	{
 		$image_1 =$_POST['image_old_1'];
         if ($_FILES['image_1']['name']!="") {
-            $image_1 = $this->file_upload('slider', 'image_1');
+			$image_1 = image_validation('slider', 'image_1');
+			if(is_array($image_1) === true) 
+			{
+				foreach($image_1 as $error){set_msg($error, 'E');}
+				refer();
+			}
         }
 
 		$array = 

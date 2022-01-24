@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2022 at 12:58 AM
+-- Generation Time: Jan 22, 2022 at 02:45 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -46,7 +46,7 @@ CREATE TABLE `about_us` (
 --
 
 INSERT INTO `about_us` (`about_us_id`, `about_us_heading`, `about_us_title`, `about_us_image_1`, `about_us_image_2`, `about_us_image_3`, `about_us_caption_1`, `about_us_caption_2`, `about_us_caption_3`, `about_us_details`, `about_us_status`) VALUES
-(2, '', 'Web Development', 'assets/web/images/about/logo.png', '', '', '																																						', '', '', '<p>Developing websites on various popular platforms like PHP (Codeigniter).</p>\r\n', 'Active'),
+(2, '', 'Web Development', 'assets/web/images/about/logo.png', '', '', '<i data-feather=\"menu\"></i>																																																						', '', '', '<p>Developing websites on various popular platforms like PHP (Codeigniter).</p>\r\n', 'Active'),
 (3, '', 'Web Designing', '', '', '', '<i data-feather=\"book-open\"></i>', '', '', '<p>Web Designing</p>\r\n', 'Active'),
 (4, '', 'Static 2 Dynamic', '', '', '', '<i data-feather=\"tv\"></i>', '', '', '<p>Converting static websites into the dynamic one, for easy content updates</p>\r\n', 'Active'),
 (5, '', 'Mobile Optimised', '', '', '', '<i data-feather=\"twitch\"></i>', '', '', '<p>Well optimised mobile ready websites, relieving from the need of mobile apps.</p>\r\n', 'Active'),

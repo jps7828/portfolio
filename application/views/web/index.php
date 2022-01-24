@@ -8,7 +8,7 @@
                     <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
                         <div class="content">
                             <div class="inner">
-                                <span class="subtitle">Welcome to my world </span>
+                                <span class="subtitle my-center-text">Welcome to my world </span>
                                 <h1 class="title">Hi, I’m <span>Jitendra Singh</span><br>
                                     <span class="header-caption" id="page-top">
                                         <!-- type headline start-->
@@ -135,7 +135,7 @@
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="javascript:void(0)">
-                                        <img style="height:400px; min-width:350px;" src="<?= $portfolio->portfolio_image_1 ?>" alt="Personal Portfolio Images">
+                                        <img class="portfolio-thumbnail" src="<?= $portfolio->portfolio_image_1 ?>" alt="Personal Portfolio Images">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -1358,7 +1358,7 @@
     </div>
     <!-- Back to top end -->
     <!-- whatsapp -->
-    <div class="whatsapp">
+    <div class="whatsapp" id="whatsApp" style="display: none;">
         <div>
             <a href="https://api.whatsapp.com/send?phone=917828550802&text=Hello%20Jitendra%2C%20I%20would%20like%20to%20have%20a%20website." target="_blank">
                 <img src="<?= base_url('assets/web/images/whatsapp.png') ?>" alt="whatsapp connect">
