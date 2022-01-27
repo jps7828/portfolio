@@ -79,7 +79,8 @@ class Query extends CI_Model {
         return $return_val;
     }
 
-    public function select($select = '*', $table, $where = null, $type = 'result', $order = null, $limit = null, $group = null, $multiWhereType = False) {
+    public function select($select = '*', $table, $where = null, $type = 'result', $order = null, $limit = null, $group = null, $multiWhereType = False) 
+    {
         $return_val = "";
         if (is_array($select)) {
             switch ($select[0]) {
@@ -218,7 +219,7 @@ class Query extends CI_Model {
     }
 
     public function insert($table, $array, $last_id = false, $multi = FALSE, $view_query = FALSE) {
-//echo $this->db->affected_rows();
+        //echo $this->db->affected_rows();
         $return_val = "";
         if ($multi == TRUE) {
             $qry = $this->db->insert_batch($table, $array);

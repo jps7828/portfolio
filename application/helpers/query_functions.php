@@ -528,35 +528,35 @@
   }
 
   function check_errors($admin) {
-    global $db;
+    // global $db;
 
     $errors = validate_admin($admin);
     if (!empty($errors)) {
       return $errors;
     }
 
-    $hashed_password = password_hash($admin['password'], PASSWORD_BCRYPT);
+    // $hashed_password = password_hash($admin['password'], PASSWORD_BCRYPT);
 
-    $sql = "INSERT INTO admins ";
-    $sql .= "(first_name, last_name, email, username, hashed_password) ";
-    $sql .= "VALUES (";
-    $sql .= "'" . db_escape($db, $admin['first_name']) . "',";
-    $sql .= "'" . db_escape($db, $admin['last_name']) . "',";
-    $sql .= "'" . db_escape($db, $admin['email']) . "',";
-    $sql .= "'" . db_escape($db, $admin['username']) . "',";
-    $sql .= "'" . db_escape($db, $hashed_password) . "'";
-    $sql .= ")";
-    $result = mysqli_query($db, $sql);
+    // $sql = "INSERT INTO admins ";
+    // $sql .= "(first_name, last_name, email, username, hashed_password) ";
+    // $sql .= "VALUES (";
+    // $sql .= "'" . db_escape($db, $admin['first_name']) . "',";
+    // $sql .= "'" . db_escape($db, $admin['last_name']) . "',";
+    // $sql .= "'" . db_escape($db, $admin['email']) . "',";
+    // $sql .= "'" . db_escape($db, $admin['username']) . "',";
+    // $sql .= "'" . db_escape($db, $hashed_password) . "'";
+    // $sql .= ")";
+    // $result = mysqli_query($db, $sql);
 
     // For INSERT statements, $result is true/false
-    if($result) {
-      return true;
-    } else {
+    // if($result) {
+    //   return true;
+    // } else {
       // INSERT failed
-      echo mysqli_error($db);
-      db_disconnect($db);
-      exit;
-    }
+    //   echo mysqli_error($db);
+    //   db_disconnect($db);
+    //   exit;
+    // }
   }
 
   function update_admin($admin) {

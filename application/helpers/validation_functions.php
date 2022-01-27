@@ -118,7 +118,7 @@ function has_unique_page_menu_name($menu_name, $current_id="0") {
   // * For existing records, provide current ID as second argument
   //   has_unique_username('johnqpublic', 4)
 function has_unique_username($username, $current_id="0") {
-  global $db;
+  // global $db;
 
   $sql = "SELECT * FROM admins ";
   $sql .= "WHERE username='" . db_escape($db, $username) . "' ";

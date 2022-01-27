@@ -57,7 +57,9 @@
 												<form method="post">
 													<h5 class="text-left mb-2 tx-26">Sign In</h5>
 
-													<?= $this->session->flashdata('msg')!=""?'<div class="alert alert-danger">'.$this->session->flashdata('msg').'</div>':"" ?>
+													<?= $this->session->flashdata('success')!=""?'<div class="alert alert-success">'.$this->session->flashdata('success').'</div>':"" ?>
+
+													<?= $this->session->flashdata('fail')!=""?'<div class="alert alert-danger">'.$this->session->flashdata('fail').'</div>':"" ?>
 													
 													<div class="form-group text-left">
 														<label class="">Username</label>

@@ -56,9 +56,12 @@
 												<div class="clearfix"></div>
 												<form method="post">
 													<h5 class="text-left mb-2 tx-26">Sign Up</h5>
+													
+													<?= $this->session->flashdata('fail')!=""?'<div class="alert alert-danger">'.$this->session->flashdata('fail').'</div>':"" ?>
+													
 													<div class="form-group text-left">
 														<label class="">Username</label>
-														<input class="form-control rounded-11" placeholder="Users Name" name="username" type="text">
+														<input class="form-control rounded-11" placeholder="User Name" name="username" type="text">
 													</div>
 													<!-- <div class="form-group text-left">
 														<label class="">Email Address</label>
