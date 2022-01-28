@@ -1119,7 +1119,7 @@
                 <div data-aos-delay="600" class="col-lg-7 contact-input">
                     <div class="contact-form-wrapper">
                         <div class="introduce">
-                            <form class="rnt-contact-form rwt-dynamic-form row" id="contacts">
+                            <form class="rnt-contact-form rwt-dynamic-form row" id="contact_me">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="name">Your Name</label>

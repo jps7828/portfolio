@@ -5,7 +5,7 @@ define('this_controller', 'Login');
 define('this_view', 'auth/basic/login/');
 define('this_asset', web_url . 'assets/admin/');
 define('this_link', 'Auth/Basic/Login/');
-define('this_table', 'role_ab_user');
+define('this_table', 'admins');
 
 
 class Login extends CI_Controller
@@ -25,14 +25,15 @@ class Login extends CI_Controller
 
 	public function register()
 	{
+		refer(); // To avoid registration
 		$this->load->view('auth/basic/login/register');
 	}
 
 	function do_login()
 	{
 		if (is_post_request()) {
-			$data['role_ab_user_username'] = $username = $this->input->post('username') ?? '';
-			$data['role_ab_user_password'] = $password =  $this->input->post('password') ?? '';
+			$username = $this->input->post('username') ?? '';
+			$password =  $this->input->post('password') ?? '';
 			// Validations
 			if (is_blank($username)) {
 				$this->session->set_flashdata('fail', 'Username cannot be blank.');
@@ -44,17 +45,15 @@ class Login extends CI_Controller
 			}
 		}
 
-		$result = $this->Query->select('*', this_table, ['role_ab_user_username' => $username], 'row');
+		$result = $this->Query->select('*', this_table, ['username' => $username], 'row');
 		if ($result) {
-			// $existing_password = decrypt($result->role_ab_user_password);
-			// if ($password == $existing_password) {
-			if (password_verify($password, $result->role_ab_user_password)) {
+			if (password_verify($password, $result->password)) {
 				//login successful
 				session_regenerate_id();
 				$this->session->set_userdata('usertype', 'admin');
 				$this->session->set_userdata('last_login', time());
-				$this->session->set_userdata('userid', $result->role_ab_user_id);
-				$this->session->set_userdata('username', $result->role_ab_user_name);
+				$this->session->set_userdata('userid', $result->id);
+				$this->session->set_userdata('username', $result->username);
 				refer('Auth/Home_Admin');
 			} else {
 				// login failed
@@ -76,8 +75,8 @@ class Login extends CI_Controller
 	function save_user()
 	{
 		if (is_post_request()) {
-			$data['role_ab_user_username'] = $username = $this->input->post('username') ?? '';
-			$data['role_ab_user_password'] = $password =  $this->input->post('password') ?? '';
+			$username = $this->input->post('username') ?? '';
+			$password =  $this->input->post('password') ?? '';
 			// Validations Username
 			if (is_blank($username)) {
 				$this->session->set_flashdata('fail', 'Username cannot be blank.');
@@ -86,9 +85,9 @@ class Login extends CI_Controller
 				$this->session->set_flashdata('fail', 'Username must be between 4 and 255 characters.');
 				refer();
 			}
-
+			// Validations Name
 			// Check if username already exists
-			$username_check = $this->Query->select('', this_table, ['role_ab_user_username' => $username]);
+			$username_check = $this->Query->select('', this_table, ['username' => $username]);
 			if (!empty($username_check)) {
 				$this->session->set_flashdata('fail', 'Username already exists.');
 				refer();
@@ -118,9 +117,8 @@ class Login extends CI_Controller
 		}
 
 
-
-		// $data['role_ab_user_username'] = $this->input->post('username');
-		$data['role_ab_user_password'] = password_hash($this->input->post('password'), PASSWORD_BCRYPT);
+		$data['username'] = $username;
+		$data['password'] = password_hash($password, PASSWORD_BCRYPT);
 		$result = $this->Query->insert(this_table, $data);
 		if ($result) {
 			$this->session->set_flashdata('success', 'User Created Successfully, <br> Please Login to Proceed.', 'S');
@@ -128,6 +126,45 @@ class Login extends CI_Controller
 		} else {
 			$this->session->set_flashdata('fail', 'Error.., please try again!', 'E');
 			refer('Auth/Basic/Login/register');
+		}
+	}
+
+	function admin_registration()
+	{
+		
+		$array =
+			[
+				'name' 				=> $this->input->post('name'),
+				'username' 			=> $this->input->post('username'),
+				'email' 			=> $this->input->post('email'),
+				'password' 			=> $this->input->post('password'),
+				'confirm_password'	=> $this->input->post('confirm_password'),
+				'my_checkbox'		=> $this->input->post('my_checkbox')
+			];
+		
+		$array['query_username'] = $this->Query->select('', this_table, ['username' => $array['username']]);
+		  
+		$errors = form_validation($array);
+		
+		if(empty($errors))
+		{
+			$data =
+			[
+				'name' 				=> $this->input->post('name'),
+				'username' 			=> $this->input->post('username'),
+				'email' 			=> $this->input->post('email')
+			];
+			$password = $this->input->post('password');
+			$data['password'] = password_hash($password, PASSWORD_BCRYPT);
+			$result = $this->Query->insert(this_table, $data);
+			if ($result) {
+				echo json_encode(['code' => 200, 'msg' => 'User Created Successfully, <br> Please Login to Proceed.']);
+				exit;
+			} else {
+				echo json_encode(['code' => 404, 'msg' => 'Error.., please try again!']);
+			}
+		}else{
+			echo json_encode( ['code' => 404, 'msg' => $errors] );
 		}
 	}
 }

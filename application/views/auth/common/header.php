@@ -13,11 +13,11 @@
 	<title>Admin</title>
 
 	<!-- Bootstrap css-->
-	<link href="<?= this_asset ?>plugins/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+	<link href="<?= this_asset ?>plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
 	<!-- Icons css-->
-	<link href="<?= this_asset ?>css/icons.css" rel="stylesheet"/>
-	<link href="<?= this_asset ?>css/custom.css" rel="stylesheet"/>
+	<link href="<?= this_asset ?>css/icons.css" rel="stylesheet" />
+	<link href="<?= this_asset ?>css/custom.css" rel="stylesheet" />
 
 	<!-- Style css-->
 	<link href="<?= this_asset ?>css/style.css" rel="stylesheet">
@@ -47,7 +47,11 @@
 	<!-- CK Editor -->
 	<script src="<?= this_asset ?>ckeditor/ckeditor.js"></script>
 
-
+	<style>
+		.red-hover:hover {
+			background-color: red;
+		}
+	</style>
 </head>
 
 <body class="main-body leftmenu">
@@ -57,12 +61,13 @@
 
 		<!-- Sidemenu -->
 		<div class="main-sidebar main-sidebar-sticky side-menu">
-			<div class="sidemenu-logo p-2"style="background-color: ;">
+			<div class="sidemenu-logo p-2">
+				<!-- Logo side top Admin Panel -->
 				<a class="main-logo" href="<?= base_url('Auth/Home_Admin') ?>">
 					<img style="width:100px;" src="<?= base_url('assets/admin/logo2.png') ?>" class="header-brand-img desktop-logo" alt="logo">
-					<img src="<?= base_url('assets/admin/logo2.png')?>" class="header-brand-img icon-logo" alt="logo">
-					<img src="<?= base_url('assets/admin/logo2.png')?>" class="header-brand-img desktop-logo theme-logo" alt="logo">
-					<img src="<?= base_url('assets/admin/logo2.png')?>" class="header-brand-img icon-logo theme-logo" alt="logo">
+					<img src="<?= base_url('assets/admin/logo2.png') ?>" class="header-brand-img icon-logo" alt="logo">
+					<img src="<?= base_url('assets/admin/logo2.png') ?>" class="header-brand-img desktop-logo theme-logo" alt="logo">
+					<img src="<?= base_url('assets/admin/logo2.png') ?>" class="header-brand-img icon-logo theme-logo" alt="logo">
 				</a>
 			</div>
 			<div class="main-sidebar-body">
@@ -139,14 +144,12 @@
 				<div class="main-header-right">
 
 					<!-- Sign Out -->
-					<a class="dropdown-item" href="<?= base_url('Auth/Basic/Login/do_logout') ?>">
+					<a class="dropdown-item red-hover" href="<?= base_url('Auth/Basic/Login/do_logout') ?>">
 						<i class="fe fe-power"></i> Sign Out
 					</a>
 					<!-- Sign Out -->
 
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- End Main Header-->
-
-	
+		<!-- End Main Header-->

@@ -120,15 +120,15 @@ function has_unique_page_menu_name($menu_name, $current_id="0") {
 function has_unique_username($username, $current_id="0") {
   // global $db;
 
-  $sql = "SELECT * FROM admins ";
-  $sql .= "WHERE username='" . db_escape($db, $username) . "' ";
-  $sql .= "AND id != '" . db_escape($db, $current_id) . "'";
+  // $sql = "SELECT * FROM admins ";
+  // $sql .= "WHERE username='" . db_escape($db, $username) . "' ";
+  // $sql .= "AND id != '" . db_escape($db, $current_id) . "'";
 
-  $result = mysqli_query($db, $sql);
-  $admin_count = mysqli_num_rows($result);
-  mysqli_free_result($result);
+  // $result = mysqli_query($db, $sql);
+  // $admin_count = mysqli_num_rows($result);
+  // mysqli_free_result($result);
 
-  return $admin_count === 0;
+  // return $admin_count === 0;
 }
 
 
@@ -174,6 +174,64 @@ function image_validation($file_path, $file_name)
   }
 }
 
+function form_validation($array) 
+  { 
+    $errors = "";
+
+			if(is_blank($array['name'])) {
+			  $errors = "<li>Name cannot be blank.</li>";
+			} elseif (!has_length($array['name'], array('min' => 2, 'max' => 255))) {
+			  $errors = "<li>Name must be between 2 and 255 characters.</li>";
+			}
+		
+			if(is_blank($array['username'])) {
+			  $errors .= "<li>Username cannot be blank.</li>";
+			} elseif (!has_length($array['username'], array('min' => 4, 'max' => 255))) {
+			  $errors .= "<li>Username must be between 4 and 255 characters.</li>";
+			}
+		
+			// if(is_blank($array['feedback_phone'])) {
+			//   $errors['feedback_phone'] = "Mobile number cannot be blank.";
+			// } elseif (!has_length($array['feedback_phone'], array('min' => 10, 'max' => 10))) {
+			//   $errors['feedback_phone'] = "Mobile number must be exactly 10 characters.";
+			// }
+		
+			if(is_blank($array['email'])) {
+			  $errors .= "<li>Email cannot be blank.</li>";
+			} elseif (!has_length($array['email'], array('max' => 255))) {
+			  $errors .= "<li>Email name must be less than 255 characters.</li>";
+			} elseif (!has_valid_email_format($array['email'])) {
+			  $errors .= "<li>Email must be a valid format.</li>";
+			}
+		
+			if(is_blank($array['password'])) {
+			  $errors .= "<li>Password cannot be blank.</li>";
+			} elseif (!has_length($array['password'], array('min' => 8, 'max' => 255))) {
+			  $errors .= "<li>Password must contain 8 or more characters.</li>";
+			} elseif (!preg_match('/[A-Z]/', ($array['password']))) {
+			  $errors .= "<li>Password must contain at least 1 uppercase letter.</li>";
+			} elseif (!preg_match('/[a-z]/', ($array['password']))) {
+			  $errors .= "<li>Password must contain at least 1 lowercase letter.</li>";
+			} elseif (!preg_match('/[0-9]/', ($array['password']))) {
+			  $errors .= "<li>Password must contain at least 1 number.</li>";
+			} elseif (!preg_match('/[^A-Za-z0-9\s]/', ($array['password']))) {
+			  $errors .= "<li>Password must contain at least 1 symbol.</li>";
+			} 
+		
+			if($array['confirm_password'] !== $array['password']) {
+			  $errors .= "<li>Password does not match.</li>";
+			}
+		
+			if(is_blank($array['my_checkbox'])) {
+			  $errors .= "<li>Please agree to our terms and conditions to proceed.</li>";
+			}
+
+      if(!empty($array['query_username'])) {
+			  $errors .= "<li>Username already exists.</li>";
+			}
+
+    return $errors ;
+  }
 
 function check_form_error($array)
 {
@@ -220,5 +278,3 @@ function check_form_error($array)
     return $errors;
   }
 }
-
-?>
