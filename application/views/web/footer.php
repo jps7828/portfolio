@@ -68,12 +68,12 @@
                     if (data.code == "200") {
                         $("#sent").show(2000).fadeOut(9000); // show the response
                         $("#submit").attr("disabled", true);
-                        $("#display-error").css("display","none");
+                        $("#display-error").css("display", "none");
                         $('#contacts').reset();
                     } else {
-                        $("#display-error").html("<ul>"+data.msg+"</ul>");
-                        $("#display-error").css("display","block");
-                        $("#notsent").show(2000); // show the response
+                        $("#display-error").html("<ul>" + data.msg + "</ul>");
+                        $("#display-error").css("display", "block");
+                        $("#notsent").show(2000).fadeOut(9000); // show the response
 
                     }
                 }
@@ -82,4 +82,104 @@
 
         });
     });
+</script>
+
+
+
+<script src="https://checkout.razorpay.com/v1/checkout.js">
+</script>
+<script>
+    function staticFunction() {
+        var amount = jQuery('#static_price').val();
+
+        var options = {
+            "key": "rzp_test_wlQrTy0AbjAe9U", // Enter the Key ID generated from the Dashboard    
+            "amount": amount * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise    
+            "currency": "INR",
+            "name": "JPS Internet Solutions",
+            "description": "Test Transaction",
+            "image": "<?= base_url('assets/web/images/logo/favicon.png') ?>",
+            // "order_id": "order_IsiApCsqtlRviy", //Pass the `id` obtained in the previous step    
+            // "account_id": "acc_Ef7ArAsdU5t0XL",    
+
+            "handler": function(response) {
+                $.ajax({
+                    type: 'post',
+                    url: '<?= base_url('payments') ?>',
+                    data: "payment_id=" + response.razorpay_payment_id + "&amount=" + amount + "&order_id=" + response.razorpay_order_id + "&signature=" + response.razorpay_signature,
+                    success: function(result) {
+                        alert("completed");
+                    }
+                });
+
+
+            }
+        };
+
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
+
+    function dynamicFunction() {
+        var amount = jQuery('#dynamic_price').val();
+
+        var options = {
+            "key": "rzp_test_wlQrTy0AbjAe9U", // Enter the Key ID generated from the Dashboard    
+            "amount": amount * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise    
+            "currency": "INR",
+            "name": "JPS Internet Solutions",
+            "description": "Test Transaction",
+            "image": "<?= base_url('assets/web/images/logo/favicon.png') ?>",
+            // "order_id": "order_IsiApCsqtlRviy", //Pass the `id` obtained in the previous step    
+            // "account_id": "acc_Ef7ArAsdU5t0XL",    
+
+            "handler": function(response) {
+                $.ajax({
+                    type: 'post',
+                    url: '<?= base_url('pay') ?>',
+                    data: "payment_id=" + response.razorpay_payment_id + "&amount=" + amount + "&order_id=" + response.razorpay_order_id + "&signature=" + response.razorpay_signature,
+                    success: function(result) {
+                        alert("completed");
+                    }
+                });
+
+
+            }
+        };
+
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
+
+
+    function premiumFunction() {
+        var amount = jQuery('#premium_price').val();
+
+        var options = {
+            "key": "rzp_test_wlQrTy0AbjAe9U", // Enter the Key ID generated from the Dashboard    
+            "amount": amount * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise    
+            "currency": "INR",
+            "name": "JPS Internet Solutions",
+            "description": "Test Transaction",
+            "image": "<?= base_url('assets/web/images/logo/favicon.png') ?>",
+            // "order_id": "order_IsiApCsqtlRviy", //Pass the `id` obtained in the previous step    
+            // "account_id": "acc_Ef7ArAsdU5t0XL",    
+
+            "handler": function(response) {
+                $.ajax({
+                    type: 'post',
+                    url: '<?= base_url('payments') ?>',
+                    data: "payment_id=" + response.razorpay_payment_id + "&amount=" + amount + "&order_id=" + response.razorpay_order_id + "&signature=" + response.razorpay_signature,
+                    success: function(result) {
+                        alert("completed");
+                    }
+                });
+
+
+            }
+        };
+
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
 </script>

@@ -20,8 +20,8 @@ class Query extends CI_Model {
     }
 
     public function query_build($sql, $type = 'result', $array = Null) {
-//$sql = "SELECT * FROM some_table WHERE id IN ? AND status = ? AND author = ?";
-//$this->db->query($sql, array(array(3, 6), 'live', 'Rick'));
+        //$sql = "SELECT * FROM some_table WHERE id IN ? AND status = ? AND author = ?";
+        //$this->db->query($sql, array(array(3, 6), 'live', 'Rick'));
         $return_val = "";
         if ($array == Null) {
             $qry = $this->db->query($sql);
@@ -43,8 +43,8 @@ class Query extends CI_Model {
             } elseif ($type == 'view') {
                 
                 $return_val = $this->db->last_query();
-// $sql = $this->db->get_compiled_select();
-//  return $sql;
+        // $sql = $this->db->get_compiled_select();
+        //  return $sql;
             } else {
                 
                 $return_val = $qry->result();

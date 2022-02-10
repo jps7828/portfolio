@@ -100,8 +100,8 @@
                         </div>
                         <div class="close-menu d-block">
                             <span class="closeTrigger">
-                            <i data-feather="x"></i>
-                        </span>
+                                <i data-feather="x"></i>
+                            </span>
                         </div>
                     </div>
                     <!-- End Header Right  -->
@@ -155,3 +155,7 @@
         </div>
     </div>
     <!-- End Popup Mobile Menu  -->
+
+    
+
+    

@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// require_once APPPATH.'../vendor/autoload.php';
 
 class Web_Controller extends CI_Controller
 {
@@ -37,10 +37,13 @@ class Web_Controller extends CI_Controller
 		$this->footer($module_id = 0, $pagename = "");
 	}
 
+	
+
 	public function notemplate($view,$data)
 	{
 		$this->load->view($view,$data);
 	}
+
 
 
 

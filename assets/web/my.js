@@ -1,4 +1,4 @@
-// Display on scroll
+// Display/hide on scroll
 whatsApp = document.querySelector("#whatsApp");
 
 var myScrollFunc = function () {
@@ -10,7 +10,7 @@ var myScrollFunc = function () {
     }
 };
 window.addEventListener("scroll", myScrollFunc);
-// Display on scroll
+// Display/hide on scroll
 
 
 $(document).ready(function() {

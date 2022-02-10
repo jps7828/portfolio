@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("application/core/Web_Controller.php");
+require_once APPPATH.'../vendor/autoload.php';
+// include_once 'vendor/razorpay/razorpay/Razorpay.php' ;
 
 define('this_controller', 'Home');
 define('this_view', 'web/index');
@@ -20,6 +22,8 @@ class Home extends Web_Controller {
 		$data['portfolio_all']= $this->Query->select('', 'portfolio', ['portfolio_status' => 'active']);
 		$this->template(this_view,$data);
 	}
+
+	
 
 	
 

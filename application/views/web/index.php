@@ -1,9 +1,34 @@
 <main class="main-page-wrapper">
 
+
+
     <!-- Start Slider Area -->
     <div id="home" class="rn-slider-area">
         <div class="slide slider-style-1">
             <div class="container">
+
+                <?php if(!empty($this->session->flashdata('fail'))):  ?>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong><?php echo $this->session->flashdata('fail'); ?></strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+                <?php if(!empty($this->session->flashdata('success'))):  ?>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong><?php echo $this->session->flashdata('success'); ?></strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                <?php endif ; ?>
+
                 <div class="row row--30 align-items-start">
                     <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
                         <div class="content">
@@ -870,8 +895,9 @@
                             <li class="nav-item  recommended">
                                 <a class="nav-style active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Dynamic</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-style" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Premium</a>
+                                <a class="nav-style" id="premium-tabs" data-toggle="tab" href="#premiums" role="tab" aria-controls="premium" aria-selected="true">Premium</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -911,10 +937,19 @@
                                         </div>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="mailto:jps7828@gmail.com" class="rn-btn d-block">
-                                            <span>ORDER NOW</span>
+                                        <form action="payments" method="post">
+                                            <input type="hidden" name="amount" value="5000">
+                                            <button type="submit" class="rn-btn d-block"><span>ORDER NOW</span>
+                                                <i data-feather="arrow-right"></i>
+                                            </button>
+                                        </form>
+                                        <!-- <button onclick="staticFunction()" class="rn-btn d-block"><span>ORDER NOW</span>
                                             <i data-feather="arrow-right"></i>
-                                        </a>
+                                        </button> -->
+                                        <!-- <a href="javascript:void(0)" class="rn-btn d-block" id="rzp-button1">
+                                                <span>ORDER NOW</span>
+                                                <i data-feather="arrow-right"></i>
+                                            </a> -->
                                         <div class="time-line">
                                             <div class="single-cmt d-flex">
                                                 <i data-feather="clock"></i>
@@ -980,10 +1015,19 @@
                                         </div>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="mailto:jps7828@gmail.com" class="rn-btn d-block">
+                                        <form action="payments" method="post">
+                                            <input type="hidden" name="amount" value="10000">
+                                            <button type="submit" class="rn-btn d-block"><span>ORDER NOW</span>
+                                                <i data-feather="arrow-right"></i>
+                                            </button>
+                                        </form>
+                                        <!-- <button onclick="dynamicFunction()" class="rn-btn d-block"><span>ORDER NOW</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button> -->
+                                        <!-- <a href="javascript:void(0)" class="rn-btn d-block" id="rzp-button2">
                                             <span>ORDER NOW</span>
                                             <i data-feather="arrow-right"></i>
-                                        </a>
+                                        </a> -->
                                         <div class="time-line d-flex">
                                             <div class="single-cmt d-flex">
                                                 <i data-feather="clock"></i>
@@ -999,7 +1043,7 @@
                                 <!-- End -->
                             </div>
 
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="tab-pane fade show" id="premiums" role="tabpanel" aria-labelledby="premium-tabs">
                                 <!-- Pricing Start -->
                                 <div class="rn-pricing">
                                     <div class="pricing-header">
@@ -1013,7 +1057,7 @@
                                     </div>
                                     <div class="pricing-body">
                                         <p class="description">
-                                            Custom made website with desired theme and elements
+                                            Custom made website with desired theme and elements.
                                         </p>
                                         <div class="check-wrapper">
                                             <div class="left-area">
@@ -1033,12 +1077,14 @@
                                                     <i data-feather="check"></i>
                                                     <p>Content Upload & Update</p>
                                                 </div>
+
                                             </div>
                                             <div class="right-area">
                                                 <div class="check d-flex">
                                                     <i data-feather="check"></i>
                                                     <p>Mobile friendly</p>
                                                 </div>
+
                                                 <div class="check d-flex">
                                                     <i data-feather="check"></i>
                                                     <p>Custom Contact Links</p>
@@ -1047,10 +1093,19 @@
                                         </div>
                                     </div>
                                     <div class="pricing-footer">
-                                        <a href="mailto:jps7828@gmail.com" class="rn-btn d-block">
+                                        <form action="payments" method="post">
+                                            <input type="hidden" name="amount" value="20000">
+                                            <button type="submit" class="rn-btn d-block"><span>ORDER NOW</span>
+                                                <i data-feather="arrow-right"></i>
+                                            </button>
+                                        </form>
+                                        <!-- <button onclick="dynamicFunction()" class="rn-btn d-block"><span>ORDER NOW</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button> -->
+                                        <!-- <a href="javascript:void(0)" class="rn-btn d-block" id="rzp-button2">
                                             <span>ORDER NOW</span>
                                             <i data-feather="arrow-right"></i>
-                                        </a>
+                                        </a> -->
                                         <div class="time-line d-flex">
                                             <div class="single-cmt d-flex">
                                                 <i data-feather="clock"></i>
@@ -1065,6 +1120,7 @@
                                 </div>
                                 <!-- End -->
                             </div>
+
                         </div>
                     </div>
                     <!-- End -->
