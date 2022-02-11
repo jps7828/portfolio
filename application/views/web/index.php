@@ -1247,7 +1247,7 @@
             </div>
         </div>
     </div>
-    <!-- End Contuct section -->
+    <!-- End Contact section -->
 
     <!-- Modal Portfolio Body area Start -->
     <?php foreach ($portfolio_all as $portfolio) : ?>
